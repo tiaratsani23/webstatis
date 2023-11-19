@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar start */
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 4%;
+  background-color: rgb(30, 230, 230);
+  border-bottom: 1px #862d07 solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+.navbar .logo{
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: left;
+}
+
+.navbar .logo a{
+  margin-left: 2rem;
+  font-weight: 700;
+  color: #321949;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.navbar .logo img{
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.navbar .navbar-nav a{
+  display: inline-block ;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 1rem;
+  color: #193549;
+  font-weight: 600;
+  font-size: 0.8rem;
+  background: 2rem #15222c17;
+  border-radius: 20px;
+  padding: 8px 10px;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover{
+  color: rgb(8, 2, 27);
+  font-size: 0.9rem;
+}
+.navbar .navbar-nav a::after{
+  content: '';
+  display: block;
+  border-bottom: 0.1rem solid rgb(10, 10, 43);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+  transform: scaleX(0.5);
+}
+
+#menu{
+  display: none;
+}
+/* navbar end */
+
+
+
+#judul{
+    background-color: rgb(30, 230, 230);
+    color: rgb(25, 41, 43);
+    text-align: center;
+    padding: 15px;
+    border: 3px solid rgba(229, 255, 224, 0.76), 0.075);
+    margin-bottom: 50px;
+    margin-top: 4rem;
+}
+
+#negara img{
+    width: 50%;
+    /* height: 240px; */
+    display: block;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content {
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 18px;
+  }
+  
+  .content .opening p {
+    margin-bottom: 30px;
+  }
+  
+  .content img {
+    width: 60%;
+    width: 360px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .content div h3,
+  .content div p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  #form {
+    padding: 20px;
+    background-color: slategray;
+    color: aliceblue;
+    border: 3px solid palevioletred;
+  }
+
+  /* responsive */
+  @media screen and (max-width: 1340px) {
+    html{
+        font-size: 75%;
+    }
+
+    #menu{
+        display: inline-block;
+    }
+
+    .navbar{
+        padding: 1.8rem 4%;
+    }
+
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #15222C;
+        width: 30rem;
+        height: 100vh;
+    }
+
+    .navbar .navbar-nav.active{
+        right: 0;
+        transition: 1s;
+    }
+
+    .navbar .navbar-nav a{
+        font-size: large;
+        color: #fff;
+        display: block;
+        margin: 1.4rem;
+    }
+
+    .navbar .navbar-nav a:hover{
+        color: cadetblue;
+        font-size: 1.6rem;
+    }
+
+    .navbar .navbar-nav a::after{
+        content: '';
+        display: block;
+        padding-bottom: 0.2rem;
+        border-bottom: 0.1rem solid cadetblue;
+        transform: scaleX(0);
+        transition: 0.2s linear;
+    }
+
+    .footer{
+        font-size: 75%;
+    }
+    
+    .footer-nav a{
+        font-size: 11px;
+    }
+    
+    .credit p, a{
+        font-size: 11px;
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 350px) {
+  html{
+      font-size: 55%;
+  }
+}
+
+/* tablet */
+@media screen and (max-width: 750px) {
+  html{
+      font-size: 60%;
+  }
+}
+
+.footer {
+  background-color: #333;
+  text-align: center;
+}
+
+/*CSS Icon */
+.footer p {
+  color: rgb(114, 250, 239);
+  font-size: 16px;
+  letter-spacing: 3px;
+}
+
+.footer .besar {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 320px; 
+  /* Adjust the width as needed */
+  background-color: #f9ba90;
+  color: #fff;
+  padding: 20px;
+  padding-right: 0;
+}
